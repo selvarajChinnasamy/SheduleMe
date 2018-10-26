@@ -1,0 +1,15 @@
+.navbar{
+  padding: 0.5rem 1rem;
+}
+img{
+  border-radius: 50%;
+}
+a span{
+  margin-right: 10px;
+  color: honeydew;
+  font-size: 13px;
+}
+.navbar-brand{
+  color: honeydew;
+  font-size: 16px;
+}

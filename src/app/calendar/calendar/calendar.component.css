@@ -1,0 +1,36 @@
+.content-card{
+  float: left;
+  margin: 10px;
+  width: 10rem;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.content-header{
+  color: honeydew;
+  font-size: 14px;
+  padding: 0.1rem 0.5rem;
+}
+.content-body{
+  padding: 0.1rem 0.5rem;
+  font-size: 12px;
+}
+.fa-plus-circle{
+  bottom: 38px;
+  right: 10px;
+  position: absolute;
+}
+.fa-microphone {
+  position: absolute;
+  bottom: 38px;
+  right: 3rem;
+}
+.fa {
+  color: #d12370;
+  cursor: pointer;
+}
+.main{
+  margin: 1rem;
+}
+.mat-card{
+padding: 0px;
+}

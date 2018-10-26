@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="main">
+<div *ngFor="let events of events">
+  <mat-card *ngFor="let items of events.events | sort" class="content-card" [ngStyle]="{'background-color':events.backgroundColor}" cdkDrag>
+    <div class="content-header" >{{ (items.summary && items.summary.length>18)? (items.summary | slice:0:18)+'...': items.summary ? items.summary : 'No Title' }}</div>
+      <div class="content-body">{{items.start.dateTime | date:'shortTime'}} - {{items.end.dateTime | date:'shortTime'}}</div>
+  </mat-card>
+</div>
+</div>
+<i class="fa fa-2x fa-plus-circle" aria-hidden="true"></i>
+<i [@openClose]="isOpen ? 'open' : 'closed'" (mousedown)="activateSpeechSearchMovie()" (mouseup)="stopRecording()" class="fa fa-2x fa-microphone" aria-hidden="true"></i>
+<app-footer></app-footer>
